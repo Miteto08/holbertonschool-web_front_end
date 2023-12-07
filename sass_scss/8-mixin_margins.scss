@@ -1,1 +1,14 @@
 /* My style */
+
+@mixin mixin-margin($property) {
+    margin-right: $property;
+    margin-left: $property;
+}
+
+body {
+    @include mixin-margin(10px);
+}
+
+div {
+    @include mixin-margin(15px);
+}
