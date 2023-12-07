@@ -1,1 +1,15 @@
 /* My style */
+
+@import 'colors.scss';
+
+.red {
+    color: $red;
+}
+
+.green {
+    color: $green;
+}
+
+.blue {
+    color: $blue;
+}
