@@ -864,7 +864,7 @@ fieldset {
 label {
   cursor: pointer;
   display: block;
-  white-space: normal;
+  white-space: unset;
   font-size: 1.4rem;
   padding: 0 0 .5rem;
 }
