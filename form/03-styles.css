@@ -860,3 +860,11 @@ fieldset {
   border: none;
   padding: 0 0 2rem;
 }
+
+label {
+  cursor: pointer;
+  display: block;
+  word-wrap: break-word;
+  font-size: 1.4rem;
+  padding: 0 0 .5rem;
+}
