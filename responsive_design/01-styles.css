@@ -503,12 +503,6 @@ ul.row {
     background: transparent;
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header .menu-icon {
     cursor: pointer;
     padding: 2.5rem;
@@ -543,6 +537,75 @@ ul.row {
 
 .header .menu-icon .navicon::after {
     top: -.7rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.menu-btn:checked~.navbar-menu {
+    display: block;
+}
+
+.menu-btn:checked~.navbar-menu nav {
+    max-height: 100%;
+    overflow: inherit;
+}
+
+.header .menu-btn:checked+.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked+.menu-icon .navicon::before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked+.menu-icon .navicon::after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked+.menu-icon .navicon::before,
+.header .menu-btn:checked+.menu-icon .navicon::after {
+    top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --header-padding: 2rem 0 0;
+    }
+
+    .header {
+        background: var(--color-black);
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+        padding: 0 1.5rem;
+    }
+
+    .header .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-logo {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    .header-logo {
+        flex-basis: 79%;
+    }
 }
 
 
@@ -963,69 +1026,6 @@ ul.row {
 
 .post-comments .section-title {
     font-variant: small-caps;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-    display: none;
-}
-
-.menu-btn:checked~.navbar-menu {
-    display: block;
-}
-
-.menu-btn:checked~.navbar-menu nav {
-    max-height: 100%;
-    overflow: inherit;
-}
-
-.header .menu-btn:checked+.menu-icon .navicon {
-    background: transparent;
-}
-
-.header .menu-btn:checked+.menu-icon .navicon::before {
-    transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked+.menu-icon .navicon::after {
-    transform: rotate(45deg);
-}
-
-.header .menu-btn:checked+.menu-icon .navicon::before,
-.header .menu-btn:checked+.menu-icon .navicon::after {
-    top: 0;
-}
-
-@media screen and (max-width: 767px) {
-    :root {
-        --header-padding: 2rem 0 0;
-    }
-
-    .header {
-        background: var(--color-black);
-    }
-
-    .header-container {
-        flex-wrap: wrap;
-        padding: 0 1.5rem;
-    }
-
-    .header .menu-icon {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .header-logo {
-        flex-basis: 70%;
-    }
-}
-
-@media screen and (max-width: 767px) and (min-width: 481px) {
-    .header-logo {
-        flex-basis: 79%;
-    }
 }
 
 /* Basic form
