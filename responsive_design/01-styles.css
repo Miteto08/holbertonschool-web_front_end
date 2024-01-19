@@ -972,11 +972,11 @@ header .menu-btn {
     display: none;
 }
 
-.menu-btn:checked+.navbar-menu {
+.menu-btn:checked~.navbar-menu {
     display: block;
 }
 
-.menu-btn:checked+.navbar-menu nav {
+.menu-btn:checked~.navbar-menu nav {
     max-height: 100%;
     overflow: inherit;
 }
@@ -1023,7 +1023,7 @@ header .menu-btn:checked+.menu-icon .navicon::after {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 481px) {
     .header-logo {
         flex-basis: 79%;
     }
