@@ -509,7 +509,7 @@ ul.row {
     align-items: center;
 }
 
-header .menu-icon {
+.header .menu-icon {
     cursor: pointer;
     padding: 2.5rem;
     position: relative;
@@ -517,7 +517,7 @@ header .menu-icon {
     display: none;
 }
 
-header .menu-icon .navicon {
+.header .menu-icon .navicon {
     background: var(--color-white);
     display: block;
     width: 2rem;
@@ -526,8 +526,8 @@ header .menu-icon .navicon {
     transition: background .2s ease-out;
 }
 
-header .menu-icon .navicon::before,
-header .menu-icon .navicon::after {
+.header .menu-icon .navicon::before,
+.header .menu-icon .navicon::after {
     content: "";
     display: block;
     width: 100%;
@@ -537,11 +537,11 @@ header .menu-icon .navicon::after {
     transition: all .2s ease-out;
 }
 
-header .menu-icon .navicon::before {
+.header .menu-icon .navicon::before {
     top: .7rem;
 }
 
-header .menu-icon .navicon::after {
+.header .menu-icon .navicon::after {
     top: -.7rem;
 }
 
@@ -967,7 +967,7 @@ header .menu-icon .navicon::after {
 
 /* menu btn */
 
-header .menu-btn {
+.header .menu-btn {
     display: none;
 }
 
@@ -980,20 +980,20 @@ header .menu-btn {
     overflow: inherit;
 }
 
-header .menu-btn:checked+.menu-icon .navicon {
+.header .menu-btn:checked+.menu-icon .navicon {
     background: transparent;
 }
 
-header .menu-btn:checked+.menu-icon .navicon::before {
+.header .menu-btn:checked+.menu-icon .navicon::before {
     transform: rotate(-45deg);
 }
 
-header .menu-btn:checked+.menu-icon .navicon::after {
+.header .menu-btn:checked+.menu-icon .navicon::after {
     transform: rotate(45deg);
 }
 
-header .menu-btn:checked+.menu-icon .navicon::before,
-header .menu-btn:checked+.menu-icon .navicon::after {
+.header .menu-btn:checked+.menu-icon .navicon::before,
+.header .menu-btn:checked+.menu-icon .navicon::after {
     top: 0;
 }
 
@@ -1002,7 +1002,7 @@ header .menu-btn:checked+.menu-icon .navicon::after {
         --header-padding: 2rem 0 0;
     }
 
-    header {
+    .header {
         background: var(--color-black);
     }
 
@@ -1011,7 +1011,7 @@ header .menu-btn:checked+.menu-icon .navicon::after {
         padding: 0 1.5rem;
     }
 
-    header .menu-icon {
+    .header .menu-icon {
         display: block;
     }
 }
