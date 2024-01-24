@@ -1,4 +1,4 @@
-#About Me#
+# About Me
 
 My name is Julien, and I am currently enrolled in the Full Stack Web Development specialization as a Software Engineer apprentice at Holberton School in Laval. Concurrently, I am employed as an apprentice at Shortways, also located in Laval.
 
