@@ -1,3 +1,11 @@
+#About Me#
+
+My name is Julien, and I am currently enrolled in the Full Stack Web Development specialization as a Software Engineer apprentice at Holberton School in Laval. Concurrently, I am employed as an apprentice at Shortways, also located in Laval.
+
+At Shortways, we focus on developing an assistant and related services. This assistant seamlessly integrates with enterprise software, particularly Human Resources Information System (SIRH) applications. Our technology stack includes Scala, JS, TSX, Yaml, Python, AWS, Terraform, SQL, NoSQL, among others.
+
+Feel free to check out my LinkedIn profile: [Julien Lechevalier](https://www.linkedin.com/in/julien-lechevalier-12381a239/)
+
 __**Sass/Scss Project**__
 
 ![cover](/sass_scss/img/9936ba361a3962278900.jpg)
