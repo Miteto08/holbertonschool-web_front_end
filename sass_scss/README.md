@@ -6,15 +6,15 @@ At Shortways, we focus on developing an assistant and related services. This ass
 
 Feel free to check out my LinkedIn profile: [Julien Lechevalier](https://www.linkedin.com/in/julien-lechevalier-12381a239/)
 
-__**Sass/Scss Project**__
+# __**Sass/Scss Project**__
 
 ![cover](/sass_scss/img/9936ba361a3962278900.jpg)
 
-**Project Description**
+## **Project Description**
 
-* This project focuses on learning Sass/Scss, covering concepts such as declaring variables, using mixins, manipulating operators, and more.
+### * This project focuses on learning Sass/Scss, covering concepts such as declaring variables, using mixins, manipulating operators, and more.
 
-**Learning Objectives**
+## **Learning Objectives**
 
 * Understand what Sass means.
 * Learn how to write Sass & Scss files.
@@ -24,7 +24,7 @@ __**Sass/Scss Project**__
 * Learn to import a Sass file, use mixins, and declare extend/inheritance styles.
 * Manipulate Sass operators.
 
-**Tasks**
+## **Tasks**
 
 0. **Always debugging!** : Create a Sass file that prints "Hello world" in the debug output.
 1. **Color variable** : Assign the text color #3D3D3D to HTML body and p tags using a Sass variable.
