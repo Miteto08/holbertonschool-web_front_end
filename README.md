@@ -6,7 +6,7 @@ At Shortways, we focus on developing an assistant and related services. This ass
 
 Feel free to check out my LinkedIn profile: [Julien Lechevalier](https://www.linkedin.com/in/julien-lechevalier-12381a239/)
 
-https://www.entreprises-magazine.com/wp-content/uploads/2020/05/Holberton-School.jpg
+![Holberton-School](https://github.com/Miteto08/holbertonschool-web_front_end/assets/136317791/0f45d144-2b52-414f-b35a-2bd50860631f)
 
 ## Project README
 
