@@ -1,5 +1,7 @@
 # Responsive Design
 
+![4fe027a0c298339cb4cb](https://github.com/Miteto08/holbertonschool-web_front_end/assets/136317791/d39a2f45-b0a0-4f8c-8154-9fc34707f225)
+
 ## Overview
 Responsive design is an essential approach in web development that ensures a seamless and optimal user experience across various devices and screen sizes. This Readme provides a concise overview of key concepts and best practices for implementing responsive design.
 
