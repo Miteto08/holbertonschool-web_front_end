@@ -8,7 +8,7 @@ Feel free to check out my LinkedIn profile: [Julien Lechevalier](https://www.lin
 
 ![Holberton-School](https://github.com/Miteto08/holbertonschool-web_front_end/assets/136317791/0f45d144-2b52-414f-b35a-2bd50860631f)
 
-## Project README
+## Project
 
 ### Accessibility
 This project focuses on ensuring that our application is accessible to users of all abilities. It involves implementing features and design considerations that make our software usable for individuals with disabilities.
