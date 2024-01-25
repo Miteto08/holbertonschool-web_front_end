@@ -1,5 +1,5 @@
 
-__**Developer Tools Project**__
+# __**Developer Tools Project**__
 
 This project involves utilizing browser Developer Tools on the (Dev Tools website)[https://dev-tools.hbtn.info/] to perform tasks such as responsive design, CSS manipulation, and exploring different panels within the Developer Tools. The tasks cover a range of actions, including changing styles, inspecting network activity, and analyzing various aspects of web development. The goal is to enhance skills in web development and gain insights into effective web page analysis and manipulation. The README provides an overview of tasks with concise descriptions for each, guiding the user through the project objectives.
 
