@@ -1,15 +1,15 @@
-function welcomeMessage (fullName) {
-    alert("Welcome "+fullName)
+function welcomeMessage(fullName) {
+    alert("Welcome " + fullName)
 }
 
-function guillaume () {
+function guillaume() {
     welcomeMessage("Guillaume")
 }
 
-function alex () {
+function alex() {
     welcomeMessage("Alex")
 }
 
-function fred () {
+function fred() {
     welcomeMessage("Fred")
 }
