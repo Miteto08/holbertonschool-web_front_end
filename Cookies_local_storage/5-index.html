@@ -2,48 +2,50 @@
 <html lang="en">
 
 <head>
+  <title>Local storage</title>
   <meta charset="UTF-8" />
-  <title>Task 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body></body>
-<script>
-  const checkLocalStorage = () => {
-    try {
-      localStorage.setItem("test", "test");
-      localStorage.removeItem("test");
-      return true;
-    } catch (error) {
-      console.error(error);
-      return alert(
-        "Sorry, your browser does not support Web storage. Try again with a better one"
-      );
+<body>
+  <script type="application/javascript">
+    const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+
+    if (typeof localStorage !== 'undefined') {
+      createStore();
+      displayCart();
+    } else {
+      alert("Sorry, your browser does not support Web storage. Try again with a better one");
     }
-  };
-  const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
-  const addItemToCart = (item) => {
-    localStorage.setItem(item, true);
-  };
-  const createStore = () => {
-    const ul = document.createElement("ul");
-    document.body.appendChild(ul);
-    for (let item of availableItems) {
-      let li = document.createElement("li");
-      li.innerText = item;
-      li.setAttribute(`onclick`, `addItemToCart('${item}')`);
-      ul.appendChild(li);
+
+    function addItemToCart(item) {
+      localStorage.setItem(item, true);
     }
-  };
-  const displayCart = () => {
-    if (localStorage.length === 0) return;
-    const p = document.createElement("p");
-    p.innerText = `You previously had ${localStorage.length} items in your cart`;
-    document.body.appendChild(p);
-  };
-  if (checkLocalStorage()) {
-    createStore();
-    displayCart();
-  }
-</script>
+
+    function createStore() {
+      const store = document.createElement("ul");
+      availableItems.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        li.addEventListener("click", () => {
+          addItemToCart(item);
+        });
+        store.append(li);
+      });
+
+      document.body.append(store);
+    }
+
+    function displayCart() {
+      const itemCount = Object.keys(localStorage).filter(key => availableItems.includes(key)).length;
+      if (itemCount > 0) {
+        const p = document.createElement("p");
+        const itemText = itemCount === 1 ? "item" : "items";
+        p.textContent = "You previously had " + itemCount + " " + itemText + " in your cart";
+        document.body.append(p);
+      }
+    }
+  </script>
+</body>
 
 </html>
